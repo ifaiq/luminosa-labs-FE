@@ -119,15 +119,16 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
+  
+  .footer-container { 
+    padding: 0 30px;
   }
   
   .footer-branding, 
   .footer-contact, 
   .footer-legal {
-    flex: 1 1 100%;
     margin-bottom: 30px;
+    margin-left: -20px;
   }
   
   .footer-legal {
@@ -142,7 +143,12 @@
 
 @media (max-width: 480px) {
   .legal-links {
-    flex-direction: column;
     gap: 10px;
+  }
+  .footer-legal {
+    width: 70%;
+  }
+  .footer-social{
+    margin-top: -20px;
   }
 }

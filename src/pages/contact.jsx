@@ -25,7 +25,7 @@ const ContactPage = () => {
     // Handle form submission here
   }
 
-  return ( 
+  return (  
     <div className="contact-page">
       <Header />
       {/* Main Content */}
@@ -34,8 +34,8 @@ const ContactPage = () => {
           <div className="contact-card">
             <div className="contact-info">
              <div className="contact-heading">
-              <span className="contact-label">CONTACT US</span>
-              <span className="contact-title">Get Started</span>
+              <div className="contact-label">CONTACT US</div>
+              <div className="contact-title">Get Started</div>
               </div>
               <p className="contact-description">
                 Ready to bring your idea to life or revamp your existing codebase?  

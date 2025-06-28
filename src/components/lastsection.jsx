@@ -11,7 +11,7 @@ const LastSection = ({
   buttonText = "Contact Us",
   buttonLink = "/Contact",
 }) => {
-  return (
+  return ( 
     <section id="contact" className="contact-sections">
       <div className="container">
         <p className="section-subtitle">{subtitle}</p>
@@ -21,7 +21,7 @@ const LastSection = ({
               {line}
               <br />
             </React.Fragment>
-          ))}
+          ))} 
         </h2>
         <p className="section-description">{description}</p>
         <div className="contact-button-container">

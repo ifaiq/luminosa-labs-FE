@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap');
 
-
 body, button, a, input, textarea {
   font-family: 'Zain';
 }
@@ -12,9 +11,8 @@ body, button, a, input, textarea {
   width: 100%;
   z-index: 1000;
   transition: background 0.3s ease;
-
-
 }
+
 .header--hidden {
   transform: translateY(-100%);
   transition: transform 0.6s ease;
@@ -60,6 +58,7 @@ body, button, a, input, textarea {
   display: flex;
   align-items: center;
 }
+
 .logo:focus {
   outline: none;
 }
@@ -88,6 +87,7 @@ body, button, a, input, textarea {
   align-items: center;
   gap: 4px;
 }
+
 .nav-link:focus,
 .nav-link:active,
 .contact-btn:focus,
@@ -95,6 +95,7 @@ body, button, a, input, textarea {
   outline: none;
   background: none;
 }
+
 *:focus {
   outline: none !important;
 }
@@ -130,7 +131,6 @@ body, button, a, input, textarea {
   transform: translateY(-1px);
 }
 
-
 .mobile-menu-toggle {
   display: none;
   background: none;
@@ -138,6 +138,7 @@ body, button, a, input, textarea {
   cursor: pointer;
   z-index: 1001;
 }
+
 .hamburger {
   width: 24px;
   height: 3px;
@@ -145,7 +146,7 @@ body, button, a, input, textarea {
   display: block;
   position: relative;
   transition: all 0.3s ease;
-  margin: 6px 0;
+  margin: 6px 20px;
 }
 
 .hamburger::before,
@@ -230,6 +231,8 @@ body, button, a, input, textarea {
 
 /* Responsive */
 @media (max-width: 768px) {
+    
+  
   .nav-desktop {
     display: none;
   }
@@ -241,16 +244,19 @@ body, button, a, input, textarea {
   .header-container {
     padding: 16px 20px;
   }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .nav-link, .contact-btn {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 769px) {
   .mobile-menu {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav-desktop.hidden {
     display: none;
   }
 }

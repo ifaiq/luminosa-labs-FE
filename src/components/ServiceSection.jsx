@@ -70,7 +70,7 @@ const ServiceSection = () => {
         <div className="firstparagraph">
           <p className="subtitle1">WHAT DO WE DO?</p>
           <h2 className="title1"> 
-            Light the Way with
+            Light the Way with 
             <br />
             Smart, Scalable Solutions
           </h2>

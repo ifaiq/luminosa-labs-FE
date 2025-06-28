@@ -64,20 +64,34 @@ background-image: url("/images/landscape.png");
 /* Responsive */
 @media (max-width: 768px) {
   .testimonials {
-    padding: 60px 60px;
+    padding: 60px 50px 60px  180px;
+    margin-right: -29px;
   }
+  
 
   .testimonial-card {
-    padding: 30px;
+    margin-left: -130px;
+    padding: 20px 30px;
   }
 
   .testimonial-text {
-    font-size: 18px;
+    font-size: 14px;
   }
+  
+.quote-icon {
+  height: 40px;
+  margin-bottom: 14px;
+}
 }
 
 @media (max-width: 480px) {
+  .author-name {
+    font-size: 14px;
+  } 
   .testimonial-text {
     font-size: 16px;
   }
+  .author-title {
+  font-size: 12px;
+}
 }

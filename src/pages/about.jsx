@@ -101,7 +101,7 @@ const About = () => {
           backgroundColor: "#f9f9f9",
         }}
       >
-        <h4
+        <h4 className="mission-title"
           style={{
             color: "rgba(133, 34, 0, 1)",
             fontSize: "24px",
@@ -113,7 +113,7 @@ const About = () => {
         >
           Our Mission
         </h4>
-        <h2
+        <h2 className="mission-subtitle"
           style={{
             fontSize: "54px",
             marginBottom: "1.5rem",

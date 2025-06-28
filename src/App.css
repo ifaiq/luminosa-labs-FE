@@ -1,10 +1,12 @@
 /* Base styles */;
-* {
-  margin: 0;
-  padding: 0;
+html, body {
+  width: 100%;
+  overflow: hidden;
   box-sizing: border-box;
 }
-
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 
 @font-face {
@@ -39,15 +41,7 @@ main {
   flex: 1;
 }
 
-/* Container */
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
-/* Buttons */
 
 .btn-outline {
   font-family: 'Work Sans', sans-serif;
@@ -62,59 +56,3 @@ main {
   color: #fff;
 }
 
-/* Section styles */
-.section-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.section-subtitle {
-  font-size: 14px;
-  font-weight: 600;
-  color: rgb(163, 72, 11);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 16px;
-}
-
-.section-title {
-  font-size: 36px;
-  font-weight: 700;
-  color: #1a1a1a; 
-  margin-bottom: 20px;
-  line-height: 1.2;
-}
-
-.section-description {
-  font-size: 18px;
-  color: #666;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 28px;
-  }
-
-  .section-description {
-    font-size: 16px;
-  }
-
-  .btn {
-    padding: 10px 20px;
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 0 15px;
-  }
-
-  .section-title {
-    font-size: 24px;
-  }
-}

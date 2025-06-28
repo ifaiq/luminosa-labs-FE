@@ -816,10 +816,68 @@
 }
 
 @media (max-width: 480px) {
+  .slide-content {
+    margin-left: 10px;
+  }
+  
+  .tags{
+    margin-left: 10px;
+  }
+  .tag3{
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 16px;
+    margin-right: 5px;
+  }
+  .date{
+    font-size: 14px;
+    margin-left: 15px;
+  }
+  .font-ag2{
+    margin-left: 18px;
+  }
   .text-container h2 {
     font-size: 20px;
   }
+  .case-study-content{
+    margin-right: -30px;
+  }
+  .content-grid {
+    padding: 0 10px;
+    margin-bottom: 80px;
+  }
+  .detailed-challenge-section{
+    margin-right: -30px;
+  }
+  .detailed-challenge-section2{
+         margin-right: -30px;
 
+  }
+  .challenge-list {
+    margin-left: 100px;
+    padding-left: 20px;
+  }
+  .solution-section {
+    margin-right: -30px;
+    margin-bottom: -30px;
+    margin-top: 0px;
+  }
+  .solution-title{
+    font-size: 24px;
+    width: 80%;
+  }
+  .impact-section {
+    margin-right: -30px; 
+ }
+ .impact-heading{
+   font-size: 24px;
+    width: 100%;
+    color: rgb(40, 39, 39);
+ }
+ .conclusion-container{
+  margin-right: -30px;
+ }
+ 
   .text-container li {
     font-size: 14px;
   }

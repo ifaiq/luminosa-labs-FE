@@ -33,7 +33,7 @@ const CaseStudy1 = () => {
 
   return (
     <>
-      <Header logoText="LUMINOSA" />
+      <Header logoText="LUMINOSA" /> 
       <section className="hero-carousel">
         <div className="carousel-container" style={{ transform: "translateX(0%)" }}>
           <div className="carousel-slide">

@@ -1,32 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
 .hero-carousel {
   position: relative;
   height: 100vh;
   overflow: hidden;
 }
 
-
 .font-ag {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
-  font-style: normal; 
   font-size: 20px;
   line-height: 50px;
   letter-spacing: 0.8px;
   margin-left: 3px;
   margin-top: -40px;
 }
+
 .tags2 {
   margin-bottom: 15px;
-  margin-left: -2px;
 }
 
 .tag1 {
   display: inline-block;
   background-color: #a19f9e58;
   color: white;
-  border-color: #f0f0f0;
   border: 2px solid #f0f0f0;
   font-size: 16px;
   font-weight: bold;
@@ -34,6 +32,7 @@
   border-radius: 20px;
   margin-right: 10px;
 }
+
 .carousel-container {
   display: flex;
   height: 100%;
@@ -95,18 +94,16 @@
 
 .slide-title {
   font-size: 56px;
-  font-family: "Zain";  
+  font-family: "Zain";
   line-height: 1.1;
   margin-bottom: 32px;
   max-width: 600px;
   text-align: left;
-
 }
 
 .slide-description {
   font-size: 22px;
   line-height: 1.0;
-  margin-top: -20px;
   margin-bottom: 20px;
   max-width: 520px;
   text-align: left;
@@ -147,7 +144,7 @@
   background-color: transparent;
   color: white;
   border: 2px solid white;
-  padding: 9px 22px; 
+  padding: 9px 22px;
 }
 
 .btn-secondary:hover {
@@ -156,7 +153,7 @@
   transform: translateY(-2px);
 }
 
-/* Carousel navigation */
+/* Arrows */
 .carousel-arrow {
   position: absolute;
   top: 50%;
@@ -170,16 +167,8 @@
   transition: all 0.3s ease;
   opacity: 0.8;
 }
-.carousel-arrow:focus,
-.carousel-arrow:active {
-  outline: none;
-  box-shadow: none;
-  color: inherit;
-  background: none;
-}
 
 .carousel-arrow:hover {
-  color: #ffffff;
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
 }
@@ -192,12 +181,13 @@
   right: 32px;
 }
 
+/* Indicators */
 .carousel-indicators {
   position: absolute;
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
-  display: none; /*Hiding indicators */
+  display: none;
   gap: 12px;
   z-index: 10;
 }
@@ -209,7 +199,6 @@
   background-color: rgba(255, 255, 255, 0.4);
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 .carousel-indicator.active {
@@ -217,82 +206,95 @@
   transform: scale(1.2);
 }
 
-.carousel-indicator:hover {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-  .slide-content {
-    padding: 0 60px;
-  }
-
-  .slide-title {
-    font-size: 48px;
-  }
-}
-
+/* Responsive Tweaks */
 @media (max-width: 768px) {
-  .slide-content {
-    padding: 0 150px 70px 10px;
+  .slide-content-wrapper {
+    left: 20px;
+  }
+
+  .slide-title,
+  .slide-description,
+  .font-ag {
+    margin-left: 0;
+    padding: 0 16px;
+    width: 90%;
+  }
+   
+  .font-ag {
+    font-size: 16px;
   }
 
   .slide-title {
-    font-size: 40px;
-    margin-bottom: 24px;
+    font-size: 32px;
   }
 
   .slide-description {
-    font-size: 24px;
-    margin-bottom: 32px;
-  }
+    font-size: 16px;
+  } 
 
   .slide-buttons {
     flex-direction: column;
-    gap: 12px;
     align-items: flex-start;
+    padding-left: 16px;
   }
 
   .btn {
-    width: auto;
     min-width: 140px;
   }
 
   .carousel-arrow-left {
-    left: 20px;
+    left: 12px;
   }
 
   .carousel-arrow-right {
-    right: 20px;
+    right: 12px;
   }
 }
 
 @media (max-width: 480px) {
-  .slide-content {
-    padding: 0 24px;
+  .hero-carousel {
+    height: 80vh;
+    margin-right: -30px;
+  }
+  .slide-content-wrapper {
+    left: -30px;
+    padding: 0 30px;
+    width: calc(100% + 60px);
   }
 
   .slide-title {
-    font-size: 28px;
+    font-size: 40px;
+    width: 80%;
   }
 
   .slide-description {
-    font-size: 15px;
+    font-size: 18px;
+    width: 70%;
+    margin-top: -20px;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .tag1 {
+    font-size: 12px;
+    padding: 4px 10px;
+    margin-left: 14px;
   }
 
   .carousel-arrow {
     padding: 8px;
   }
-
   .carousel-arrow-left {
-    left: 16px;
+    left: 8px;
   }
-
   .carousel-arrow-right {
-    right: 16px;
+    right: 30px;
   }
 
   .carousel-indicators {
     bottom: 24px;
   }
+  
 }

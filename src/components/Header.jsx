@@ -5,6 +5,7 @@ import "./Header.css";
 const Header = ({ logoText = "LUMINOSA" }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [hideHeader, setHideHeader] = useState(false);
+  
 
   useEffect(() => {
     document.body.style.overflow = mobileMenuOpen ? "hidden" : "auto";
